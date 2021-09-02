@@ -14,12 +14,13 @@ abstract class Persona {
     
     public Persona(){}
 
-    public Persona(String nombre, String apellido, String direccion, String telefono, String nit, String fecha_nacimiento) {
+    public Persona( String nit, String nombre, String apellido, String direccion, String telefono, String fecha_nacimiento) {
+        this.nit = nit;
         this.nombre = nombre;
         this.apellido = apellido;
         this.direccion = direccion;
         this.telefono = telefono;
-        this.nit = nit;
+        
         this.fecha_nacimiento = fecha_nacimiento;
     }
     
@@ -75,6 +76,6 @@ abstract class Persona {
     }
     
     protected void agregar(){}
-    protected void modificar(){}
+    protected void actualizar(){}
     protected void eliminar(){}
 }

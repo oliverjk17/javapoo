@@ -62,9 +62,10 @@ public class Empleado extends Persona{
         System.out.println("C/E: "+getCodigo_empleado());
         System.out.println("puesto: "+getPuesto());
         System.out.println("_____________________");
-    }
+    } 
+    
     @Override
-    public void modificar()
+    public void actualizar()
     {
         System.out.println("C/E: "+getCodigo_empleado());
         System.out.println("puesto: "+getPuesto());
